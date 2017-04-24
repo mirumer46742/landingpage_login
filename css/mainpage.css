@@ -1,0 +1,28 @@
+body{
+    background-color: #eee;
+}
+
+button{
+  	margin: 3px 0px;
+}
+
+.panel{
+    width:100%;
+    margin-top: 15px;
+    display: none;
+}
+.tab-pane{
+    width: 80%
+    margin-left:20px;
+}
+.jumbo{
+    margin: 0% 30%;
+}
+#idbox{
+    height:50px;
+}
+#filebox{
+    height:50px;
+    padding:13px 13px;
+    font-size: 15px;
+}

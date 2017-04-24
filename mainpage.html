@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Main Page</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/mainpage.css" rel="stylesheet">
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+            <script>
+              $(document).ready(function(){
+                $("#btnadd").click(function(){
+                    $("#paneladd").show();
+                });
+
+              $("#btnedit").click(function(){
+                    $("#paneledit").show();
+                });
+
+              //  $("#btndownload").click(function(){
+              //       $("#paneldownload").show();
+              //   });
+
+
+
+              });
+            </script>
+
+      </head>
+  <body>
+
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="mainpage.html"><b>Turner Project</b></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a data-toggle="tab" href="#datapaneladd"><span class="glyphicon glyphicon-plus-sign"> Add </span></a></li>
+          <li><a data-toggle="tab" href="#datapaneledit"><span class="glyphicon glyphicon-edit"> Edit </a></li>
+          <li><a data-toggle="tab" href="#datapanelupload"><span class="glyphicon glyphicon-upload"> Upload </a></li>
+          <li><a data-toggle="tab" href="#datapaneldownload"><span class="glyphicon glyphicon-download-alt"> Download </a></li>
+        </ul>
+      </div>
+    </nav>    <!--End of Navbar-->
+
+
+
+
+
+
+      <div class="container">
+      <div class="tab-content">
+
+      <div id="datapaneladd" class="tab-pane fade in active" >
+
+
+      <div class="jumbo">
+      <div id=divform  align="center">
+        <form inline>
+          <input  id="idbox" type="text"  class="form-control " placeholder="Enter an ID to Add">
+          <button type="button"  id="btnadd" class="btn btn-primary btn-block btn-lg" > Click to Add</button>
+        </form>
+      </div>
+      </div>
+
+
+
+
+
+      <div  class="jumbo" align="center">
+        <div  id="paneladd" class="panel panel-info">
+          <div class="panel-heading"><b>Add Data</b></div>
+          <div class="panel-body" >
+            
+            <input type="text" name="name1" placeholder="Enter ID" class="form-control" ><br>
+            <input type="text" name="name2" placeholder="Enter name1" class="form-control"><br>
+            <input type="text" name="name3" placeholder="Enter name2" class="form-control"><br>
+            <input type="text" name="name4" placeholder="Enter name3" class="form-control"><br>
+            <input type="text" name="name5" placeholder="Enter name4" class="form-control"><br>
+            <input type="text" name="name6" placeholder="Enter name5" class="form-control"><br>
+            <input type="text" name="name7" placeholder="Enter name6" class="form-control"><br>
+            </div>
+          </div>
+        </div>
+      </div>
+          <!--Add Panel-->
+
+
+      <div id="datapaneledit" class="tab-pane fade" >
+      <div class="jumbo">
+      <div id=divform  align="center" >
+        <form inline>
+          <input  id="idbox" type="text"  class="form-control" placeholder="Enter an ID to Edit">
+          <button type="button" id="btnedit" class="btn btn-primary btn-block btn-lg " > Click to Edit</button>
+        </form>
+      </div>
+      </div>
+
+      <div  class="jumbo" align="center" >
+        <div  id="paneledit" class="panel panel-info">
+          <div class="panel-heading">Edit Data</div>
+          <div class="panel-body" >
+            
+            <input type="text" name="name1" placeholder="Enter ID" class="form-control" ><br>
+            <input type="text" name="name2" placeholder="Enter name1" class="form-control"><br>
+            <input type="text" name="name3" placeholder="Enter name2" class="form-control"><br>
+            <input type="text" name="name4" placeholder="Enter name3" class="form-control"><br>
+            <input type="text" name="name5" placeholder="Enter name4" class="form-control"><br>
+            <input type="text" name="name6" placeholder="Enter name5" class="form-control"><br>
+            <input type="text" name="name7" placeholder="Enter name6" class="form-control"><br>
+            </div>
+          </div>
+      </div>
+      </div>
+             <!--Edit Panel-->
+
+
+
+
+      <div id="datapanelupload" class="tab-pane fade">
+      <div class="jumbo">
+      <div id=divform align="center">
+        <form inline>
+          <input  id="filebox" type="file"  class="form-control">
+          <button type="button" id="btnupload" class="btn btn-primary btn-block btn-lg" > Click to Upload</button>
+        </form>
+      </div>
+      </div>
+
+
+      </div>          <!--Upload Panel-->
+
+
+
+
+      <div id="datapaneldownload" class="tab-pane fade" >
+      <div class="jumbo">
+      <div id=divform  align="center">
+        
+          <button type="button" id="btndownload" class="btn btn-primary btn-block btn-lg" > Click to Download</button>
+        
+      </div>
+      </div>
+
+
+      <!--
+      <div   class="jumbo" align="center"  >
+        <div  id="paneldownload" class="panel panel-primary"  hidden>
+          <div class="panel-heading">Download Data</div>
+          <div class="panel-body" >
+            
+            <input type="text" name="name1" placeholder="Enter ID" class="form-control" ><br>
+            <input type="text" name="name2" placeholder="Enter name1" class="form-control"><br>
+            <input type="text" name="name3" placeholder="Enter name2" class="form-control"><br>
+            <input type="text" name="name4" placeholder="Enter name3" class="form-control"><br>
+            <input type="text" name="name5" placeholder="Enter name4" class="form-control"><br>
+            <input type="text" name="name6" placeholder="Enter name5" class="form-control"><br>
+            <input type="text" name="name7" placeholder="Enter name6" class="form-control"><br>
+            </div>
+          </div>
+      </div>
+      -->
+      </div>          <!--Download Panel-->
+
+
+
+      </div>          <!--tab Content-->
+      </div>          <!--main Container-->
+
+
+
+          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <!-- Include all compiled plugins (below), or include individual files as needed -->
+          <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
