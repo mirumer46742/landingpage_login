@@ -23,16 +23,8 @@
               $("#btnedit").click(function(){
                     $("#paneledit").show();
                 });
-
-              //  $("#btndownload").click(function(){
-              //       $("#paneldownload").show();
-              //   });
-
-
-
               });
             </script>
-
       </head>
   <body>
 
@@ -147,37 +139,56 @@
 
 
 
-      <div id="datapaneldownload" class="tab-pane fade" >
+     <div id="datapaneldownload" class="tab-pane fade" >
       <div class="jumbo">
       <div id=divform  align="center">
         
-          <button type="button" id="btndownload" class="btn btn-primary btn-block btn-lg" > Click to Download</button>
+          <button type="button" id="btndownload" class="btn btn-primary btn-block btn-lg" data-toggle="modal" data-target="#myModal"> Click to Download</button>
         
       </div>
       </div>
 
 
-      <!--
-      <div   class="jumbo" align="center"  >
-        <div  id="paneldownload" class="panel panel-primary"  hidden>
-          <div class="panel-heading">Download Data</div>
-          <div class="panel-body" >
-            
-            <input type="text" name="name1" placeholder="Enter ID" class="form-control" ><br>
-            <input type="text" name="name2" placeholder="Enter name1" class="form-control"><br>
-            <input type="text" name="name3" placeholder="Enter name2" class="form-control"><br>
-            <input type="text" name="name4" placeholder="Enter name3" class="form-control"><br>
-            <input type="text" name="name5" placeholder="Enter name4" class="form-control"><br>
-            <input type="text" name="name6" placeholder="Enter name5" class="form-control"><br>
-            <input type="text" name="name7" placeholder="Enter name6" class="form-control"><br>
-            </div>
-          </div>
-      </div>
-      -->
+      <div class="jumbo" align="center"  >
+        
+      		<!-- Modal -->
+		  <div class="modal fade" id="myModal" role="dialog">
+		    <div class="modal-dialog">
+		    
+		      <!-- Modal content-->
+		      <div class="modal-content" >
+		        <div class="modal-header" >
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		          <h4 class="modal-title">Download Data</h4>
+		        </div>	<!--Modal Header-->
+
+		        <div class="modal-body">
+		          <form>
+              
+                  <input type="text" name="name1" placeholder="Enter ID" class="form-control" ><br>
+                  <input type="text" name="name2" placeholder="Enter name1" class="form-control"><br>
+                  <input type="text" name="name3" placeholder="Enter name2" class="form-control"><br>
+                  <input type="text" name="name4" placeholder="Enter name3" class="form-control"><br>
+                  <input type="text" name="name5" placeholder="Enter name4" class="form-control"><br>
+                  <input type="text" name="name6" placeholder="Enter name5" class="form-control"><br>
+                  <input type="text" name="name7" placeholder="Enter name6" class="form-control"><br>
+              </form>
+		        </div>	<!--Modal Body-->
+
+		        <div class="modal-footer" >
+		          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        </div>	<!--Modal Footer-->
+		      </div>	<!--Modal Content-->
+		      
+		    </div>		<!--Modal Dialog-->
+		  </div>		<!--Modal-->
+		  
+		  
+
+
+      </div>		  <!--Jumbo Class of Download Panel-->
+      
       </div>          <!--Download Panel-->
-
-
-
       </div>          <!--tab Content-->
       </div>          <!--main Container-->
 

@@ -26,3 +26,14 @@ button{
     padding:13px 13px;
     font-size: 15px;
 }
+
+.modal-dialog{
+    margin: 4% 25%;
+} 
+.modal-body{
+    margin: 0% 20%;
+}
+.modal-body form{
+    margin-top: 5%;
+
+}
