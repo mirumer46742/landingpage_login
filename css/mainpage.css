@@ -5,6 +5,11 @@ body{
 
 button{
   	margin: 3px 0px;
+    margin-top: 5px;
+}
+.btndiv{
+
+    margin:0px 0px;
 }
 
 .panel{
