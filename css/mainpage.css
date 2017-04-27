@@ -53,6 +53,7 @@ button{
 }
 .navbar-default .navbar-brand {
   color: #ffffff;
+  font-size: 25px;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
