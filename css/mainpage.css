@@ -35,6 +35,9 @@ button{
     padding:13px 13px;
     font-size: 15px;
 }
+#datapanelpreview{
+    margin-top: 180px;
+  }
 
 .modal-dialog{
     margin: 4% 15%;
@@ -101,3 +104,24 @@ button{
 .navbar-default .navbar-link:hover {
   color: #ffffff;
 }
+
+  @media screen and (min-width: 768px){
+
+  .jumbo{
+      margin: 0% 35%;
+      }
+  
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+      color: #ffffff;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+      color: #ffffff;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+      color: #ffffff;
+      background-color: #286090;
+    }
+  }

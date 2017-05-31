@@ -11,34 +11,7 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/mainpage.css" rel="stylesheet">
 
-<style>
-	
-	@media screen and (min-width: 768px){
-
-	.jumbo{
-    	margin: 0% 35%;
-    	}
-	
-	  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-	    color: #ffffff;
-	  }
-	  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-	  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-	    color: #ffffff;
-	  }
-	  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-	  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-	  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-	    color: #ffffff;
-	    background-color: #286090;
-	  }
-	}
-</style>
-
-
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-
             <script>
               $(document).ready(function(){
                 $("#btnadd").click(function(){
@@ -70,6 +43,7 @@
           <li><a data-toggle="tab" href="#datapaneledit"><span class="glyphicon glyphicon-edit"> Edit </a></li>
           <li><a data-toggle="tab" href="#datapanelupload"><span class="glyphicon glyphicon-upload"> Upload </a></li>
           <li><a data-toggle="tab" href="#datapaneldownload"><span class="glyphicon glyphicon-download-alt"> Download </a></li>
+          <li><a data-toggle="tab" href="#datapanelpreview"><span class="glyphicon glyphicon-eye-open"> Preview </a></li>
         </ul>
       </div>
     </nav>    <!--End of Navbar-->
@@ -168,8 +142,6 @@
       </div>          <!--Upload Panel-->
 
 
-
-
      <div id="datapaneldownload" class="tab-pane fade" >
       <div class="jumbo">
       <div id=divform  align="center">
@@ -221,6 +193,34 @@
       </div>		  <!--Jumbo Class of Download Panel-->
       
       </div>          <!--Download Panel-->
+
+
+      <div id="datapanelpreview" class="tab-pane fade">
+      <div class="jumbo">
+      <div id=divform align="center">
+        <form inline>
+          <input  id="idbox" type="text"  class="form-control" placeholder="Enter JTA ID">
+          <div class="btndiv">
+            <button type="button" id="btnpreview" class="btn btn-primary btn-block " > Preview</button>
+          </div>
+        </form>
+      </div>
+      </div>
+
+
+      </div>          <!--Preview Panel-->
+
+
+
+
+
+
+
+
+
+
+
+
       </div>          <!--tab Content-->
       </div>          <!--main Container-->
 
