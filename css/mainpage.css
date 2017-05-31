@@ -104,6 +104,15 @@ button{
 .navbar-default .navbar-link:hover {
   color: #ffffff;
 }
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+      color: white;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+      color: white;
+}
+
+  
 
   @media screen and (min-width: 768px){
 
@@ -112,16 +121,16 @@ button{
       }
   
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-      color: #ffffff;
+      color: grey;
     }
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-      color: #ffffff;
+      color: black;
     }
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-      color: #ffffff;
+      color: black;
       background-color: #286090;
     }
   }
